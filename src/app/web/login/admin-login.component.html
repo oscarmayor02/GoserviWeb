@@ -1,0 +1,35 @@
+<div class="login">
+  <div class="login__left">
+    <div class="login__left-inner">
+      <div class="login__logo">Go<span>Servi</span></div>
+      <h1>Panel de administración</h1>
+      <p>Gestiona tu plataforma desde un solo lugar. Métricas, pagos, usuarios y reportes.</p>
+      <div class="login__feats">
+        <div class="login__feat">📊 Dashboard en tiempo real</div>
+        <div class="login__feat">💰 Gestión de pagos y retiros</div>
+        <div class="login__feat">👥 Control total de usuarios</div>
+        <div class="login__feat">📋 Reportes CSV y PDF</div>
+      </div>
+    </div>
+  </div>
+  <div class="login__right">
+    <div class="login__form">
+      <h2>Iniciar sesión</h2>
+      <p class="login__sub">Acceso exclusivo para administradores</p>
+      <div class="login__field">
+        <label>Correo electrónico</label>
+        <input type="email" [(ngModel)]="email" placeholder="admin@goservi.com" (keyup.enter)="login()">
+      </div>
+      <div class="login__field">
+        <label>Contraseña</label>
+        <input [type]="showPass ? 'text' : 'password'" [(ngModel)]="password" placeholder="••••••••" (keyup.enter)="login()">
+        <button class="login__eye" (click)="showPass=!showPass">{{ showPass ? '🙈' : '👁' }}</button>
+      </div>
+      <div class="login__err" *ngIf="error">{{ error }}</div>
+      <button class="login__submit" (click)="login()" [disabled]="loading">
+        {{ loading ? 'Verificando...' : 'Ingresar al panel' }}
+      </button>
+      <a class="login__back" (click)="goBack()">← Volver a GoServi</a>
+    </div>
+  </div>
+</div>

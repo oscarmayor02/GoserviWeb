@@ -1,0 +1,655 @@
+<div class="gs-landing">
+  <nav class="n" id="mainNav">
+    <div class="n__i">
+      <div class="n__b">
+        <div class="n__ic">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2.5"
+            stroke-linecap="round"
+          >
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+            <polyline points="9 22 9 12 15 12 15 22" />
+          </svg>
+        </div>
+        <span class="n__lo">Go<b>Servi</b></span>
+      </div>
+      <div class="n__lk">
+        <a (click)="scrollTo('servicios')">Servicios</a>
+        <a (click)="scrollTo('como')">Cómo funciona</a>
+        <a (click)="scrollTo('seguridad')">Seguridad</a>
+        <a (click)="scrollTo('profesionales')">Profesionales</a>
+        <a (click)="scrollTo('ciudades')">Ciudades</a>
+        <a (click)="scrollTo('faq')">FAQ</a>
+        <a (click)="goLogin()" class="n__ad">Admin</a>
+        <a (click)="scrollTo('descargar')" class="n__dl">Descargar</a>
+      </div>
+      <button class="n__hm" (click)="menuOpen = !menuOpen">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="n__mob" *ngIf="menuOpen">
+      <a (click)="scrollTo('servicios')">Servicios</a>
+      <a (click)="scrollTo('como')">Cómo funciona</a>
+      <a (click)="scrollTo('ciudades')">Ciudades</a>
+      <a (click)="scrollTo('faq')">FAQ</a>
+      <a (click)="goLogin()">Admin</a>
+      <a (click)="scrollTo('descargar')" class="n__dl">Descargar App</a>
+    </div>
+  </nav>
+
+  <section class="h">
+    <div class="h__orb h__o1"></div>
+    <div class="h__orb h__o2"></div>
+    <div class="h__particles" id="particles"></div>
+    <div class="h__w">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+        <path
+          d="M0,70 C360,110 720,20 1080,65 C1260,85 1400,75 1440,60 L1440,100 L0,100Z"
+          fill="#fff"
+        />
+      </svg>
+    </div>
+    <div class="h__i">
+      <div class="h__t">
+        <div class="h__pill">
+          <div class="h__dot"></div>
+          Disponible en Colombia
+        </div>
+        <h1>Profesionales de confianza <em>en tu puerta.</em></h1>
+        <p class="h__desc">
+          Reserva servicios a domicilio en segundos. Limpieza, belleza,
+          reparaciones — con pago seguro y garantía GoServi.
+        </p>
+        <div class="h__btns">
+          <a (click)="scrollTo('descargar')" class="h__b1"
+            >Descargar gratis
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              width="16"
+              height="16"
+            >
+              <path d="M7 17l9.2-9.2M17 17V7.8H7.8" /></svg
+          ></a>
+          <a (click)="scrollTo('como')" class="h__b2">¿Cómo funciona?</a>
+        </div>
+        <div class="h__pf">
+          <div class="h__avs">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=72&h=72&fit=crop&crop=face"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=72&h=72&fit=crop&crop=face"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=72&h=72&fit=crop&crop=face"
+              alt=""
+            />
+            <img
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=72&h=72&fit=crop&crop=face"
+              alt=""
+            />
+          </div>
+          <div class="h__pf-t">
+            <strong>+500 profesionales verificados</strong
+            ><span>4.8 ⭐ · +2.000 servicios</span>
+          </div>
+        </div>
+      </div>
+      <div class="h__v">
+        <div class="ph">
+          <div class="ph__n"></div>
+          <div class="ph__s">
+            <img
+              src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=360&h=640&fit=crop"
+              alt=""
+            />
+            <div class="ph__ui">
+              <div class="ph__card">
+                <div class="ph__hd">
+                  <img
+                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=56&h=56&fit=crop&crop=face"
+                    class="ph__av"
+                    alt=""
+                  />
+                  <div>
+                    <div class="ph__nm">Carolina M.</div>
+                    <div class="ph__rl">Limpieza profesional</div>
+                  </div>
+                </div>
+                <div class="ph__st">⭐⭐⭐⭐⭐ 4.9 (128)</div>
+                <div class="ph__rw">
+                  <span class="ph__pr">$40.000/h</span
+                  ><button class="ph__bt">Reservar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h__fc h__fc--1">
+          <div class="fc__ic fc__ic--g">✓</div>
+          <div>
+            <div class="fc__tx">Reserva confirmada</div>
+            <div class="fc__sx">Limpieza · Hoy 2PM</div>
+          </div>
+        </div>
+        <div class="h__fc h__fc--2">
+          <div class="fc__ic fc__ic--b">🛡️</div>
+          <div>
+            <div class="fc__tx">Pago protegido</div>
+            <div class="fc__sx">Garantía GoServi</div>
+          </div>
+        </div>
+        <div class="h__fc h__fc--3">
+          <div class="fc__ic fc__ic--a">⭐</div>
+          <div>
+            <div class="fc__tx">4.9 estrellas</div>
+            <div class="fc__sx">+2.000 reseñas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tr">
+    <div class="tr__i">
+      <div class="tr__x">
+        <span class="tr__n" data-target="500" data-prefix="+">0</span
+        ><span class="tr__l">Profesionales</span>
+      </div>
+      <div class="tr__x">
+        <span class="tr__n" data-target="2000" data-prefix="+">0</span
+        ><span class="tr__l">Servicios</span>
+      </div>
+      <div class="tr__x">
+        <span class="tr__n" data-target="4.8" data-suffix=" ⭐" data-decimal="1"
+          >0</span
+        ><span class="tr__l">Rating</span>
+      </div>
+      <div class="tr__x">
+        <span class="tr__n" data-target="15" data-prefix="+">0</span
+        ><span class="tr__l">Ciudades</span>
+      </div>
+      <div class="tr__x">
+        <span class="tr__n">24/7</span><span class="tr__l">Soporte</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="sv" id="servicios">
+    <div class="sv__i">
+      <div class="sv__hd reveal">
+        <div class="tag">🛠️ Servicios</div>
+        <h2 class="ttl">Todo lo que necesitas, a un toque</h2>
+        <p class="dsc">
+          Profesionales verificados. Reserva en segundos, paga seguro.
+        </p>
+      </div>
+      <div class="sv__g">
+        <div
+          class="sc reveal stagger"
+          *ngFor="let s of services; let i = index"
+          [style.--d]="i * 100 + 'ms'"
+        >
+          <div class="sc__im">
+            <img [src]="s.img" [alt]="s.name" />
+            <div class="sc__tg">{{ s.tag }}</div>
+            <div class="sc__rt">⭐ {{ s.rating }}</div>
+          </div>
+          <div class="sc__bd">
+            <h3 class="sc__nm">{{ s.name }}</h3>
+            <p class="sc__ds">{{ s.desc }}</p>
+            <div class="sc__ft">
+              <span class="sc__pc">{{ s.price }}</span>
+              <div class="sc__aw">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  width="12"
+                  height="12"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hw" id="como">
+    <div class="hw__i">
+      <div class="hw__hd reveal">
+        <div class="tag">📱 Cómo funciona</div>
+        <h2 class="ttl">Tan fácil como 1, 2, 3</h2>
+      </div>
+      <div class="hw__g">
+        <div class="hw__c reveal stagger" style="--d: 0ms">
+          <div class="hw__n">1</div>
+          <h3>Busca un servicio</h3>
+          <p>Explora categorías. Filtra por precio, rating y cercanía.</p>
+        </div>
+        <div class="hw__c reveal stagger" style="--d: 150ms">
+          <div class="hw__n">2</div>
+          <h3>Reserva y paga seguro</h3>
+          <p>Elige horario. Wompi o efectivo. Dinero protegido.</p>
+        </div>
+        <div class="hw__c reveal stagger" style="--d: 300ms">
+          <div class="hw__n">3</div>
+          <h3>Recibe el servicio</h3>
+          <p>Confirma con código seguro. Al terminar, califica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ap">
+    <div class="ap__i">
+      <div class="ap__t reveal-left">
+        <div class="tag">📲 La app</div>
+        <h2>Todo en la palma de tu mano</h2>
+        <p>
+          Reserva, chatea, sigue en tiempo real y paga — todo desde GoServi.
+        </p>
+        <div class="ap__fs">
+          <div class="ap__f">
+            <div class="ap__f-ic">📍</div>
+            <div>
+              <h4>GPS en tiempo real</h4>
+              <p>Sigue la llegada del profesional</p>
+            </div>
+          </div>
+          <div class="ap__f">
+            <div class="ap__f-ic">💬</div>
+            <div>
+              <h4>Chat integrado</h4>
+              <p>Sin compartir tu número personal</p>
+            </div>
+          </div>
+          <div class="ap__f">
+            <div class="ap__f-ic">🔐</div>
+            <div>
+              <h4>Código de verificación</h4>
+              <p>Inicio seguro del servicio</p>
+            </div>
+          </div>
+          <div class="ap__f">
+            <div class="ap__f-ic">⭐</div>
+            <div>
+              <h4>Califica y reseña</h4>
+              <p>Ayuda a elegir los mejores</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ap__ph reveal-right">
+        <div class="ph2">
+          <div class="ph2__n"></div>
+          <div class="ph2__s">
+            <img
+              src="https://images.unsplash.com/photo-1556740758-90de374c12ad?w=340&h=600&fit=crop"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="ph2">
+          <div class="ph2__n"></div>
+          <div class="ph2__s">
+            <img src="../../../assets/gps.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="seguridad">
+    <div class="sec__ob"></div>
+    <div class="sec__i">
+      <div class="sec__hd reveal">
+        <h2>Tu seguridad es lo primero</h2>
+        <p>Cada transacción y cada profesional pasa por nuestros filtros.</p>
+      </div>
+      <div class="sec__g">
+        <div class="sec__c reveal stagger" style="--d: 0ms">
+          <div class="sec__ci">🛡️</div>
+          <h3>Garantía GoServi</h3>
+          <p>Pago retenido hasta confirmar el servicio.</p>
+        </div>
+        <div class="sec__c reveal stagger" style="--d: 80ms">
+          <div class="sec__ci">💳</div>
+          <h3>Pago seguro Wompi</h3>
+          <p>Cifrado bancario. También efectivo.</p>
+        </div>
+        <div class="sec__c reveal stagger" style="--d: 160ms">
+          <div class="sec__ci">✅</div>
+          <h3>Profesionales verificados</h3>
+          <p>Identidad y antecedentes verificados.</p>
+        </div>
+        <div class="sec__c reveal stagger" style="--d: 240ms">
+          <div class="sec__ci">🔐</div>
+          <h3>Código de inicio</h3>
+          <p>Solo comienza con tu código único.</p>
+        </div>
+        <div class="sec__c reveal stagger" style="--d: 320ms">
+          <div class="sec__ci">💬</div>
+          <h3>Soporte 24/7</h3>
+          <p>Disponible los 365 días del año.</p>
+        </div>
+        <div class="sec__c reveal stagger" style="--d: 400ms">
+          <div class="sec__ci">💰</div>
+          <h3>Reembolso garantizado</h3>
+          <p>Si algo falla, devolvemos tu dinero.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pr" id="profesionales">
+    <div class="pr__i">
+      <div class="pr__im reveal-left">
+        <img src="../../../assets/limpieza.jpg" alt="" />
+        <img src="../../../assets/electrico.jpg" alt="" />
+        <img src="../../../assets/manicurista.jpg" alt="" />
+        <img src="../../../assets/mecanico.jpg" alt="" />
+      </div>
+      <div class="pr__t reveal-right">
+        <div class="tag">💼 Profesionales</div>
+        <h2>Gana dinero con tus habilidades</h2>
+        <p>
+          Únete y recibe clientes en tu zona. Tú defines horarios y precios.
+        </p>
+        <div class="pr__pk">
+          <div class="pr__p">
+            <div class="pr__p-ic">💰</div>
+            <div>
+              <div class="pr__p-tx">Pagos seguros</div>
+              <div class="pr__p-sx">Retira cuando quieras</div>
+            </div>
+          </div>
+          <div class="pr__p">
+            <div class="pr__p-ic">📅</div>
+            <div>
+              <div class="pr__p-tx">Tu agenda, tus reglas</div>
+              <div class="pr__p-sx">Configura disponibilidad</div>
+            </div>
+          </div>
+          <div class="pr__p">
+            <div class="pr__p-ic">⭐</div>
+            <div>
+              <div class="pr__p-tx">Reputación visible</div>
+              <div class="pr__p-sx">Las reseñas te posicionan</div>
+            </div>
+          </div>
+          <div class="pr__p">
+            <div class="pr__p-ic">📍</div>
+            <div>
+              <div class="pr__p-tx">Clientes cerca</div>
+              <div class="pr__p-sx">Te encuentran por GPS</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="te">
+    <div class="te__i">
+      <div class="te__hd reveal">
+        <div class="tag">💬 Testimonios</div>
+        <h2 class="ttl">Lo que dicen nuestros usuarios</h2>
+      </div>
+      <div class="te__g">
+        <div class="tc reveal stagger" style="--d: 0ms">
+          <div class="tc__st">⭐⭐⭐⭐⭐</div>
+          <p class="tc__q">
+            Llegó puntual y dejó mi apartamento impecable. Definitivamente
+            seguiré usando GoServi.
+          </p>
+          <div class="tc__au">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=72&h=72&fit=crop&crop=face"
+              alt=""
+            />
+            <div><strong>María G.</strong><span>Cliente · Bogotá</span></div>
+          </div>
+        </div>
+        <div class="tc reveal stagger" style="--d: 120ms">
+          <div class="tc__st">⭐⭐⭐⭐⭐</div>
+          <p class="tc__q">
+            GoServi me cambió la vida. Más clientes que nunca y pago totalmente
+            seguro.
+          </p>
+          <div class="tc__au">
+            <img
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=72&h=72&fit=crop&crop=face"
+              alt=""
+            />
+            <div><strong>Carlos M.</strong><span>Profesional · Cali</span></div>
+          </div>
+        </div>
+        <div class="tc reveal stagger" style="--d: 240ms">
+          <div class="tc__st">⭐⭐⭐⭐⭐</div>
+          <p class="tc__q">
+            Plomero un domingo en 40 minutos. La garantía GoServi me dio total
+            tranquilidad.
+          </p>
+          <div class="tc__au">
+            <img
+              src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=72&h=72&fit=crop&crop=face"
+              alt=""
+            />
+            <div><strong>Ana R.</strong><span>Cliente · Medellín</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ════════════════════════════════════════════════════════════
+     PEGAR ESTO EN landing.component.html
+     DESPUÉS de </section> de testimonios (.te)
+     ANTES de <section class="ct" id="descargar">
+     ════════════════════════════════════════════════════════════ -->
+
+  <!-- CIUDADES -->
+  <section class="ci" id="ciudades">
+    <div class="ci__i">
+      <div class="ci__hd reveal">
+        <div class="tag">📍 Cobertura</div>
+        <h2 class="ttl">Ciudades donde operamos</h2>
+        <p class="dsc">
+          Crecemos cada mes. ¿No estamos en tu ciudad? Pronto llegaremos.
+        </p>
+      </div>
+      <div class="ci__g reveal">
+        <div class="ci__c ci__c--active">
+          <div class="ci__dot ci__dot--on"></div>
+          Bogotá
+        </div>
+        <div class="ci__c ci__c--active">
+          <div class="ci__dot ci__dot--on"></div>
+          Medellín
+        </div>
+        <div class="ci__c ci__c--active">
+          <div class="ci__dot ci__dot--on"></div>
+          Cali
+        </div>
+        <div class="ci__c ci__c--active">
+          <div class="ci__dot ci__dot--on"></div>
+          Barranquilla
+        </div>
+        <div class="ci__c ci__c--active">
+          <div class="ci__dot ci__dot--on"></div>
+          Cartagena
+        </div>
+        <div class="ci__c ci__c--active">
+          <div class="ci__dot ci__dot--on"></div>
+          Bucaramanga
+        </div>
+        <div class="ci__c">
+          <div class="ci__dot ci__dot--on"></div>
+          Pereira
+        </div>
+        <div class="ci__c">
+          <div class="ci__dot ci__dot--on"></div>
+          Santa Marta
+        </div>
+        <div class="ci__c">
+          <div class="ci__dot ci__dot--on"></div>
+          Manizales
+        </div>
+        <div class="ci__c">
+          <div class="ci__dot ci__dot--soon"></div>
+          Ibagué <span class="ci__soon">Pronto</span>
+        </div>
+        <div class="ci__c">
+          <div class="ci__dot ci__dot--soon"></div>
+          Villavicencio <span class="ci__soon">Pronto</span>
+        </div>
+        <div class="ci__c">
+          <div class="ci__dot ci__dot--soon"></div>
+          Pasto <span class="ci__soon">Pronto</span>
+        </div>
+        <div class="ci__c">
+          <div class="ci__dot ci__dot--soon"></div>
+          Cúcuta <span class="ci__soon">Pronto</span>
+        </div>
+        <div class="ci__c">
+          <div class="ci__dot ci__dot--soon"></div>
+          Neiva <span class="ci__soon">Pronto</span>
+        </div>
+        <div class="ci__c">
+          <div class="ci__dot ci__dot--soon"></div>
+          Armenia <span class="ci__soon">Pronto</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="fq" id="faq">
+    <div class="fq__i">
+      <div class="fq__hd reveal">
+        <div class="tag">❓ Preguntas frecuentes</div>
+        <h2 class="ttl">Resolvemos tus dudas</h2>
+      </div>
+      <div class="fq__list">
+        <div
+          class="fq__item"
+          *ngFor="let q of faqs; let i = index"
+          [class.fq__item--open]="q.open"
+        >
+          <div class="fq__q" (click)="q.open = !q.open">
+            {{ q.question }}
+            <span class="fq__arrow">▼</span>
+          </div>
+          <div class="fq__a">
+            <p>{{ q.answer }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="ct" id="descargar">
+    <div class="ct__i reveal-scale">
+      <div class="ct__ob"></div>
+      <div class="ct__t">
+        <h2>Descarga GoServi hoy</h2>
+        <p>
+          iOS y Android. Reserva servicios profesionales en minutos. Gratis.
+        </p>
+        <div class="ct__ss">
+          <a class="ct__s"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="18"
+              height="18"
+            >
+              <path
+                d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
+              />
+            </svg>
+            App Store</a
+          >
+          <a class="ct__s"
+            ><svg
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              width="18"
+              height="18"
+            >
+              <path
+                d="M3.18 23.27c.56.68 1.47.61 2.49.05l16.45-9.48-3.53-3.53L3.18 23.27zM20.68 11.5L17.19 9.5l-3.95 3.95 3.95 3.95 3.49-2.01c.97-.56 1.22-1.33 0-1.89zM2.06 2.83c-.13.36-.06.82-.06 1.27v15.8c0 .45-.07.91.06 1.27l9.47-9.17L2.06 2.83zM3.18.73L18.59 13.7l-3.53-3.53L3.18.73z"
+              />
+            </svg>
+            Google Play</a
+          >
+        </div>
+      </div>
+      <div class="ct__v">
+        <div class="ct__ph">
+          <div class="ct__ph-s">
+            <img
+              src="https://images.unsplash.com/photo-1556740758-90de374c12ad?w=360&h=640&fit=crop"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="ft">
+    <div class="ft__i">
+      <div class="ft__b">
+        <div class="ft__lo">
+          <div class="ft__lo-ic">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#fff"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              width="14"
+              height="14"
+            >
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <span class="ft__lo-tx">Go<b>Servi</b></span>
+        </div>
+        <p>
+          Servicios profesionales a domicilio. Los mejores profesionales de tu
+          ciudad.
+        </p>
+      </div>
+      <div class="ft__c">
+        <h4>Servicios</h4>
+        <a>Limpieza</a><a>Manicure</a><a>Plomería</a><a>Electricidad</a>
+      </div>
+      <div class="ft__c">
+        <h4>Empresa</h4>
+        <a>Nosotros</a><a>Blog</a><a>Trabaja aquí</a><a>Contacto</a>
+      </div>
+      <div class="ft__c">
+        <h4>Soporte</h4>
+        <a>Ayuda</a><a>Términos</a><a>Privacidad</a><a>Seguridad</a>
+      </div>
+    </div>
+    <div class="ft__bt">
+      <p>© 2025 GoServi — Todos los derechos reservados</p>
+    </div>
+  </footer>
+</div>
