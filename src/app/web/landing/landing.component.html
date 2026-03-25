@@ -16,6 +16,7 @@
         </div>
         <span class="n__lo">Go<b>Servi</b></span>
       </div>
+
       <div class="n__lk">
         <a (click)="scrollTo('servicios')">Servicios</a>
         <a (click)="scrollTo('como')">Cómo funciona</a>
@@ -26,10 +27,12 @@
         <a (click)="goLogin()" class="n__ad">Admin</a>
         <a (click)="scrollTo('descargar')" class="n__dl">Descargar</a>
       </div>
+
       <button class="n__hm" (click)="menuOpen = !menuOpen">
         <span></span><span></span><span></span>
       </button>
     </div>
+
     <div class="n__mob" *ngIf="menuOpen">
       <a (click)="scrollTo('servicios')">Servicios</a>
       <a (click)="scrollTo('como')">Cómo funciona</a>
@@ -44,6 +47,7 @@
     <div class="h__orb h__o1"></div>
     <div class="h__orb h__o2"></div>
     <div class="h__particles" id="particles"></div>
+
     <div class="h__w">
       <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
         <path
@@ -52,20 +56,24 @@
         />
       </svg>
     </div>
+
     <div class="h__i">
       <div class="h__t">
         <div class="h__pill">
           <div class="h__dot"></div>
           Disponible en Colombia
         </div>
+
         <h1>Profesionales de confianza <em>en tu puerta.</em></h1>
+
         <p class="h__desc">
           Reserva servicios a domicilio en segundos. Limpieza, belleza,
           reparaciones — con pago seguro y garantía GoServi.
         </p>
+
         <div class="h__btns">
-          <a (click)="scrollTo('descargar')" class="h__b1"
-            >Descargar gratis
+          <a (click)="scrollTo('descargar')" class="h__b1">
+            Descargar gratis
             <svg
               viewBox="0 0 24 24"
               fill="none"
@@ -75,10 +83,13 @@
               width="16"
               height="16"
             >
-              <path d="M7 17l9.2-9.2M17 17V7.8H7.8" /></svg
-          ></a>
+              <path d="M7 17l9.2-9.2M17 17V7.8H7.8" />
+            </svg>
+          </a>
+
           <a (click)="scrollTo('como')" class="h__b2">¿Cómo funciona?</a>
         </div>
+
         <div class="h__pf">
           <div class="h__avs">
             <img
@@ -98,20 +109,24 @@
               alt=""
             />
           </div>
+
           <div class="h__pf-t">
-            <strong>+500 profesionales verificados</strong
-            ><span>4.8 ⭐ · +2.000 servicios</span>
+            <strong>+500 profesionales verificados</strong>
+            <span>4.8 ⭐ · +2.000 servicios</span>
           </div>
         </div>
       </div>
+
       <div class="h__v">
         <div class="ph">
           <div class="ph__n"></div>
+
           <div class="ph__s">
             <img
               src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=360&h=640&fit=crop"
               alt=""
             />
+
             <div class="ph__ui">
               <div class="ph__card">
                 <div class="ph__hd">
@@ -125,15 +140,18 @@
                     <div class="ph__rl">Limpieza profesional</div>
                   </div>
                 </div>
+
                 <div class="ph__st">⭐⭐⭐⭐⭐ 4.9 (128)</div>
+
                 <div class="ph__rw">
-                  <span class="ph__pr">$40.000/h</span
-                  ><button class="ph__bt">Reservar</button>
+                  <span class="ph__pr">$40.000/h</span>
+                  <button class="ph__bt">Reservar</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="h__fc h__fc--1">
           <div class="fc__ic fc__ic--g">✓</div>
           <div>
@@ -141,6 +159,7 @@
             <div class="fc__sx">Limpieza · Hoy 2PM</div>
           </div>
         </div>
+
         <div class="h__fc h__fc--2">
           <div class="fc__ic fc__ic--b">🛡️</div>
           <div>
@@ -148,6 +167,7 @@
             <div class="fc__sx">Garantía GoServi</div>
           </div>
         </div>
+
         <div class="h__fc h__fc--3">
           <div class="fc__ic fc__ic--a">⭐</div>
           <div>
@@ -162,24 +182,30 @@
   <section class="tr">
     <div class="tr__i">
       <div class="tr__x">
-        <span class="tr__n" data-target="500" data-prefix="+">0</span
-        ><span class="tr__l">Profesionales</span>
+        <span class="tr__n" data-target="500" data-prefix="+">0</span>
+        <span class="tr__l">Profesionales</span>
       </div>
+
       <div class="tr__x">
-        <span class="tr__n" data-target="2000" data-prefix="+">0</span
-        ><span class="tr__l">Servicios</span>
+        <span class="tr__n" data-target="2000" data-prefix="+">0</span>
+        <span class="tr__l">Servicios</span>
       </div>
+
       <div class="tr__x">
         <span class="tr__n" data-target="4.8" data-suffix=" ⭐" data-decimal="1"
           >0</span
-        ><span class="tr__l">Rating</span>
+        >
+        <span class="tr__l">Rating</span>
       </div>
+
       <div class="tr__x">
-        <span class="tr__n" data-target="15" data-prefix="+">0</span
-        ><span class="tr__l">Ciudades</span>
+        <span class="tr__n" data-target="15" data-prefix="+">0</span>
+        <span class="tr__l">Ciudades</span>
       </div>
+
       <div class="tr__x">
-        <span class="tr__n">24/7</span><span class="tr__l">Soporte</span>
+        <span class="tr__n">24/7</span>
+        <span class="tr__l">Soporte</span>
       </div>
     </div>
   </section>
@@ -193,6 +219,7 @@
           Profesionales verificados. Reserva en segundos, paga seguro.
         </p>
       </div>
+
       <div class="sv__g">
         <div
           class="sc reveal stagger"
@@ -204,9 +231,11 @@
             <div class="sc__tg">{{ s.tag }}</div>
             <div class="sc__rt">⭐ {{ s.rating }}</div>
           </div>
+
           <div class="sc__bd">
             <h3 class="sc__nm">{{ s.name }}</h3>
             <p class="sc__ds">{{ s.desc }}</p>
+
             <div class="sc__ft">
               <span class="sc__pc">{{ s.price }}</span>
               <div class="sc__aw">
@@ -234,17 +263,20 @@
         <div class="tag">📱 Cómo funciona</div>
         <h2 class="ttl">Tan fácil como 1, 2, 3</h2>
       </div>
+
       <div class="hw__g">
         <div class="hw__c reveal stagger" style="--d: 0ms">
           <div class="hw__n">1</div>
           <h3>Busca un servicio</h3>
           <p>Explora categorías. Filtra por precio, rating y cercanía.</p>
         </div>
+
         <div class="hw__c reveal stagger" style="--d: 150ms">
           <div class="hw__n">2</div>
           <h3>Reserva y paga seguro</h3>
           <p>Elige horario. Wompi o efectivo. Dinero protegido.</p>
         </div>
+
         <div class="hw__c reveal stagger" style="--d: 300ms">
           <div class="hw__n">3</div>
           <h3>Recibe el servicio</h3>
@@ -262,6 +294,7 @@
         <p>
           Reserva, chatea, sigue en tiempo real y paga — todo desde GoServi.
         </p>
+
         <div class="ap__fs">
           <div class="ap__f">
             <div class="ap__f-ic">📍</div>
@@ -270,6 +303,7 @@
               <p>Sigue la llegada del profesional</p>
             </div>
           </div>
+
           <div class="ap__f">
             <div class="ap__f-ic">💬</div>
             <div>
@@ -277,6 +311,7 @@
               <p>Sin compartir tu número personal</p>
             </div>
           </div>
+
           <div class="ap__f">
             <div class="ap__f-ic">🔐</div>
             <div>
@@ -284,6 +319,7 @@
               <p>Inicio seguro del servicio</p>
             </div>
           </div>
+
           <div class="ap__f">
             <div class="ap__f-ic">⭐</div>
             <div>
@@ -293,21 +329,14 @@
           </div>
         </div>
       </div>
+
       <div class="ap__ph reveal-right">
-        <div class="ph2">
-          <div class="ph2__n"></div>
-          <div class="ph2__s">
-            <img
-              src="https://images.unsplash.com/photo-1556740758-90de374c12ad?w=340&h=600&fit=crop"
-              alt=""
-            />
-          </div>
+        <div class="ap__mock ap__mock--back">
+          <img src="../../../assets/chat (2).png" alt="Chat GoServi" />
         </div>
-        <div class="ph2">
-          <div class="ph2__n"></div>
-          <div class="ph2__s">
-            <img src="../../../assets/gps.jpeg" alt="" />
-          </div>
+
+        <div class="ap__mock ap__mock--front">
+          <img src="../../../assets/gpsguia.png" alt="GPS GoServi" />
         </div>
       </div>
     </div>
@@ -315,37 +344,44 @@
 
   <section class="sec" id="seguridad">
     <div class="sec__ob"></div>
+
     <div class="sec__i">
       <div class="sec__hd reveal">
         <h2>Tu seguridad es lo primero</h2>
         <p>Cada transacción y cada profesional pasa por nuestros filtros.</p>
       </div>
+
       <div class="sec__g">
         <div class="sec__c reveal stagger" style="--d: 0ms">
           <div class="sec__ci">🛡️</div>
           <h3>Garantía GoServi</h3>
           <p>Pago retenido hasta confirmar el servicio.</p>
         </div>
+
         <div class="sec__c reveal stagger" style="--d: 80ms">
           <div class="sec__ci">💳</div>
           <h3>Pago seguro Wompi</h3>
           <p>Cifrado bancario. También efectivo.</p>
         </div>
+
         <div class="sec__c reveal stagger" style="--d: 160ms">
           <div class="sec__ci">✅</div>
           <h3>Profesionales verificados</h3>
           <p>Identidad y antecedentes verificados.</p>
         </div>
+
         <div class="sec__c reveal stagger" style="--d: 240ms">
           <div class="sec__ci">🔐</div>
           <h3>Código de inicio</h3>
           <p>Solo comienza con tu código único.</p>
         </div>
+
         <div class="sec__c reveal stagger" style="--d: 320ms">
           <div class="sec__ci">💬</div>
           <h3>Soporte 24/7</h3>
           <p>Disponible los 365 días del año.</p>
         </div>
+
         <div class="sec__c reveal stagger" style="--d: 400ms">
           <div class="sec__ci">💰</div>
           <h3>Reembolso garantizado</h3>
@@ -363,12 +399,14 @@
         <img src="../../../assets/manicurista.jpg" alt="" />
         <img src="../../../assets/mecanico.jpg" alt="" />
       </div>
+
       <div class="pr__t reveal-right">
         <div class="tag">💼 Profesionales</div>
         <h2>Gana dinero con tus habilidades</h2>
         <p>
           Únete y recibe clientes en tu zona. Tú defines horarios y precios.
         </p>
+
         <div class="pr__pk">
           <div class="pr__p">
             <div class="pr__p-ic">💰</div>
@@ -377,6 +415,7 @@
               <div class="pr__p-sx">Retira cuando quieras</div>
             </div>
           </div>
+
           <div class="pr__p">
             <div class="pr__p-ic">📅</div>
             <div>
@@ -384,6 +423,7 @@
               <div class="pr__p-sx">Configura disponibilidad</div>
             </div>
           </div>
+
           <div class="pr__p">
             <div class="pr__p-ic">⭐</div>
             <div>
@@ -391,6 +431,7 @@
               <div class="pr__p-sx">Las reseñas te posicionan</div>
             </div>
           </div>
+
           <div class="pr__p">
             <div class="pr__p-ic">📍</div>
             <div>
@@ -409,6 +450,7 @@
         <div class="tag">💬 Testimonios</div>
         <h2 class="ttl">Lo que dicen nuestros usuarios</h2>
       </div>
+
       <div class="te__g">
         <div class="tc reveal stagger" style="--d: 0ms">
           <div class="tc__st">⭐⭐⭐⭐⭐</div>
@@ -424,6 +466,7 @@
             <div><strong>María G.</strong><span>Cliente · Bogotá</span></div>
           </div>
         </div>
+
         <div class="tc reveal stagger" style="--d: 120ms">
           <div class="tc__st">⭐⭐⭐⭐⭐</div>
           <p class="tc__q">
@@ -438,6 +481,7 @@
             <div><strong>Carlos M.</strong><span>Profesional · Cali</span></div>
           </div>
         </div>
+
         <div class="tc reveal stagger" style="--d: 240ms">
           <div class="tc__st">⭐⭐⭐⭐⭐</div>
           <p class="tc__q">
@@ -455,13 +499,7 @@
       </div>
     </div>
   </section>
-  <!-- ════════════════════════════════════════════════════════════
-     PEGAR ESTO EN landing.component.html
-     DESPUÉS de </section> de testimonios (.te)
-     ANTES de <section class="ct" id="descargar">
-     ════════════════════════════════════════════════════════════ -->
 
-  <!-- CIUDADES -->
   <section class="ci" id="ciudades">
     <div class="ci__i">
       <div class="ci__hd reveal">
@@ -471,6 +509,7 @@
           Crecemos cada mes. ¿No estamos en tu ciudad? Pronto llegaremos.
         </p>
       </div>
+
       <div class="ci__g reveal">
         <div class="ci__c ci__c--active">
           <div class="ci__dot ci__dot--on"></div>
@@ -536,13 +575,13 @@
     </div>
   </section>
 
-  <!-- FAQ -->
   <section class="fq" id="faq">
     <div class="fq__i">
       <div class="fq__hd reveal">
         <div class="tag">❓ Preguntas frecuentes</div>
         <h2 class="ttl">Resolvemos tus dudas</h2>
       </div>
+
       <div class="fq__list">
         <div
           class="fq__item"
@@ -560,43 +599,38 @@
       </div>
     </div>
   </section>
+
   <section class="ct" id="descargar">
     <div class="ct__i reveal-scale">
       <div class="ct__ob"></div>
+
       <div class="ct__t">
         <h2>Descarga GoServi hoy</h2>
         <p>
           iOS y Android. Reserva servicios profesionales en minutos. Gratis.
         </p>
+
         <div class="ct__ss">
-          <a class="ct__s"
-            ><svg
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="18"
-              height="18"
-            >
+          <a class="ct__s">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
               <path
                 d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
               />
             </svg>
-            App Store</a
-          >
-          <a class="ct__s"
-            ><svg
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              width="18"
-              height="18"
-            >
+            App Store
+          </a>
+
+          <a class="ct__s">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
               <path
                 d="M3.18 23.27c.56.68 1.47.61 2.49.05l16.45-9.48-3.53-3.53L3.18 23.27zM20.68 11.5L17.19 9.5l-3.95 3.95 3.95 3.95 3.49-2.01c.97-.56 1.22-1.33 0-1.89zM2.06 2.83c-.13.36-.06.82-.06 1.27v15.8c0 .45-.07.91.06 1.27l9.47-9.17L2.06 2.83zM3.18.73L18.59 13.7l-3.53-3.53L3.18.73z"
               />
             </svg>
-            Google Play</a
-          >
+            Google Play
+          </a>
         </div>
       </div>
+
       <div class="ct__v">
         <div class="ct__ph">
           <div class="ct__ph-s">
@@ -630,24 +664,38 @@
           </div>
           <span class="ft__lo-tx">Go<b>Servi</b></span>
         </div>
+
         <p>
           Servicios profesionales a domicilio. Los mejores profesionales de tu
           ciudad.
         </p>
       </div>
+
       <div class="ft__c">
         <h4>Servicios</h4>
-        <a>Limpieza</a><a>Manicure</a><a>Plomería</a><a>Electricidad</a>
+        <a>Limpieza</a>
+        <a>Manicure</a>
+        <a>Plomería</a>
+        <a>Electricidad</a>
       </div>
+
       <div class="ft__c">
         <h4>Empresa</h4>
-        <a>Nosotros</a><a>Blog</a><a>Trabaja aquí</a><a>Contacto</a>
+        <a>Nosotros</a>
+        <a>Blog</a>
+        <a>Trabaja aquí</a>
+        <a>Contacto</a>
       </div>
+
       <div class="ft__c">
         <h4>Soporte</h4>
-        <a>Ayuda</a><a>Términos</a><a>Privacidad</a><a>Seguridad</a>
+        <a>Ayuda</a>
+        <a>Términos</a>
+        <a>Privacidad</a>
+        <a>Seguridad</a>
       </div>
     </div>
+
     <div class="ft__bt">
       <p>© 2025 GoServi — Todos los derechos reservados</p>
     </div>
