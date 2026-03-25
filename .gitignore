@@ -1,4 +1,7 @@
 node_modules
-.env
-.env.*
-!.env.example
+# Angular cache
+.angular/
+
+# Environments con datos sensibles
+src/environments/environment.ts
+src/environments/environment.prod.ts
